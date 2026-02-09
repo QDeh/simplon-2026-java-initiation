@@ -43,11 +43,9 @@ public class Exercise03ConditionalStatements {
      */
     public int absoluteValue(int number) {
         if (number < 0) {
-            return number - 2*number;
-        } else {
-            return number;
+            number = -number;
         }
-
+        return number;
     }
     
     /**
