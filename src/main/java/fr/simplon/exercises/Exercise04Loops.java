@@ -77,7 +77,7 @@ public class Exercise04Loops {
      * @return true si le nombre est premier, false sinon
      */
     public boolean isPrime(int number) {
-        if (number == 1) {
+        if (number <= 1) {
             return false;
         }
         for (int i = 2; i < number; i++) {
