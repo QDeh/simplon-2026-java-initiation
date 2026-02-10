@@ -63,13 +63,7 @@ public class Exercise04Loops {
      */
     public int countDigits(int number) {
         int compteur = 1;
-        if (number == 0){
-            return 1;
-        }
-        if (number < 10){
-            return 1;
-        }
-        while (number >= 10) {
+        while (number / 10 > 0) {
             number = number / 10;
             compteur++;
         }
@@ -83,7 +77,7 @@ public class Exercise04Loops {
      * @return true si le nombre est premier, false sinon
      */
     public boolean isPrime(int number) {
-        if (number == 1){
+        if (number == 1) {
             return false;
         }
         for (int i = 2; i < number; i++) {
@@ -94,6 +88,7 @@ public class Exercise04Loops {
         }
         return true;
     }
+
     public static void main(String[] args) {
         Exercise04Loops exercise = new Exercise04Loops();
         exercise.countDigits(880);
