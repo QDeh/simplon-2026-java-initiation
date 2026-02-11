@@ -6,12 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Tests pour l'exercice 16
  */
-class Exercise16InsertionSortTest {
+class Exercise17QuickSortTest {
     
     Exercise17QuickSort exercise = new Exercise17QuickSort();
     
     @Test
-    void testQuicknSort() {
+    void testQuickSort() {
         assertArrayEquals(new int[]{1, 2, 3, 4, 5}, exercise.quickSort(new int[]{5, 2, 4, 1, 3}));
         assertArrayEquals(new int[]{1, 2, 3, 4, 5}, exercise.quickSort(new int[]{1, 2, 3, 4, 5}));
         assertArrayEquals(new int[]{1, 2, 3, 4, 5}, exercise.quickSort(new int[]{5, 4, 3, 2, 1}));
@@ -20,7 +20,7 @@ class Exercise16InsertionSortTest {
     }
     
     @Test
-    void testInsertionSortDescending() {
+    void testQuickSortDescending() {
         assertArrayEquals(new int[]{5, 4, 3, 2, 1}, exercise.quickSortDescending(new int[]{5, 2, 4, 1, 3}));
         assertArrayEquals(new int[]{5, 4, 3, 2, 1}, exercise.quickSortDescending(new int[]{1, 2, 3, 4, 5}));
         assertArrayEquals(new int[]{7, 6, 3, 2, 1}, exercise.quickSortDescending(new int[]{7, 3, 1, 6, 2}));
