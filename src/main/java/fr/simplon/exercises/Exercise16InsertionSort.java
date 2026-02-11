@@ -48,6 +48,29 @@ public class Exercise16InsertionSort {
         }
         return array;
     }
+    /*
+        public int[] insertionSort(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int cellValue = array[i];
+            int positionValue = -1;
+
+            for (int j = i - 1; j >= 0; j--) {
+                if (cellValue < array[j]) {
+                    positionValue = j;
+                    array[j + 1] = array[j];
+                } else {
+                    break;
+                }
+            }
+
+            if (positionValue >= 0) {
+                array[positionValue] = cellValue;
+            }
+        }
+        return array;
+    }
+
+     */
 
     /**
      * Compte le nombre de décalages effectués pendant le tri par insertion
