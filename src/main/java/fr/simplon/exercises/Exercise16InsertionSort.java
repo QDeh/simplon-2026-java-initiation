@@ -30,24 +30,6 @@ public class Exercise16InsertionSort {
         return array;
     }
 
-    /**
-     * Trie un tableau en ordre décroissant avec le tri par insertion
-     * 
-     * @param array le tableau à trier
-     * @return le tableau trié en ordre décroissant
-     */
-    public int[] insertionSortDescending(int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            int cellValue = array[i];
-            int positionValue = i - 1;
-            while (positionValue >= 0 && cellValue > array[positionValue]) {
-                array[positionValue + 1] = array[positionValue];
-                positionValue--;
-            }
-            array[positionValue + 1] = cellValue;
-        }
-        return array;
-    }
     /*
         public int[] insertionSort(int[] array) {
         for (int i = 1; i < array.length; i++) {
@@ -71,6 +53,25 @@ public class Exercise16InsertionSort {
     }
 
      */
+    
+    /**
+     * Trie un tableau en ordre décroissant avec le tri par insertion
+     * 
+     * @param array le tableau à trier
+     * @return le tableau trié en ordre décroissant
+     */
+    public int[] insertionSortDescending(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int cellValue = array[i];
+            int positionValue = i - 1;
+            while (positionValue >= 0 && cellValue > array[positionValue]) {
+                array[positionValue + 1] = array[positionValue];
+                positionValue--;
+            }
+            array[positionValue + 1] = cellValue;
+        }
+        return array;
+    }
 
     /**
      * Compte le nombre de décalages effectués pendant le tri par insertion
