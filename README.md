@@ -26,6 +26,7 @@ Les exercices couvrent les notions suivantes, dans l'ordre de difficulté croiss
 14. **Exercise 14** - Tri à bulles (Bubble Sort)
 15. **Exercise 15** - Tri par sélection (Selection Sort)
 16. **Exercise 16** - Tri par insertion (Insertion Sort)
+17. **Exercise 17** - Tri rapide (Quick Sort)
 
 ## 🚀 Comment utiliser ce projet
 
